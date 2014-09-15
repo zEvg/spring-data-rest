@@ -11,12 +11,13 @@
 	<parent>
 		<groupId>org.springframework.data</groupId>
 		<artifactId>spring-data-rest-parent</artifactId>
-		<version>2.3.0.BUILD-SNAPSHOT</version>
+		<version>2.3.0.DATAREST-397-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
 	<properties>
 		<jsonpath>0.8.1</jsonpath>
+		<spring-security-core.version>4.0.0.CI-SNAPSHOT</spring-security-core.version>
 	</properties>
 
 	<dependencies>
@@ -125,6 +126,27 @@
 					<groupId>jdk.tools</groupId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>${spring-security-core.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${spring-security-core.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+			<scope>test</scope>
 		</dependency>
 
 	</dependencies>
