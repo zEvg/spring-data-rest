@@ -170,18 +170,27 @@ public class PersistentEntityJackson2Module extends SimpleModule {
 				}
 			}
 
-			Resource<Object> resourceToRender = new Resource<Object>(resource.getContent(), links) {
-
-				@JsonUnwrapped
-				public Resources<?> getEmbedded() {
-					return resource.getEmbeddeds();
-				}
-			};
+			Resource<Object> resourceToRender = new EmbeddedUnwrapper(resource, links);
 
 			provider.defaultSerializeValue(resourceToRender, jgen);
 		}
+
 	}
 
+	static class EmbeddedUnwrapper extends Resource<Object> {
+
+		private final PersistentEntityResource resource;
+
+		public EmbeddedUnwrapper(PersistentEntityResource resource, List<Link> links) {
+			super(resource.getContent(), links);
+			this.resource = resource;
+		}
+
+		@JsonUnwrapped
+		public Resources<?> getEmbedded() {
+			return resource.getEmbeddeds();
+		}
+	}
 	/**
 	 * {@link BeanSerializerModifier} to drop the property descriptors for associations.
 	 * 
