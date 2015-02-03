@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.springframework.data</groupId>
+  <artifactId>spring-data-rest-parent</artifactId>
+  <version>2.2.2.BUILD-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20150203.113813</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20150203113813</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>2.2.2.BUILD-20150203.113813-1</value>
+        <updated>20150203113813</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
