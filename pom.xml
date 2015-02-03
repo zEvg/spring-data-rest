@@ -51,7 +51,7 @@
     <scm>
         <url>https://github.com/zEvg/spring-data-rest</url>
         <connection>scm:git:git@github.com:zEvg/spring-data-rest.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com:zEvg/spring-data-rest.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:zEvg/spring-data-rest.git</developerConnection>
     </scm>
 
 	<developers>
