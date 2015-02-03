@@ -13,7 +13,7 @@
 	<parent>
 		<groupId>org.springframework.data.build</groupId>
 		<artifactId>spring-data-parent</artifactId>
-		<version>1.5.2.BUILD-SNAPSHOT</version>
+		<version>1.5.2.RELEASE</version>
 		<relativePath>../spring-data-build/parent/pom.xml</relativePath>
 	</parent>
 
@@ -27,7 +27,7 @@
 		<project.type>multi</project.type>
 		<dist.id>spring-data-rest</dist.id>
 
-		<springdata.commons>1.9.2.BUILD-SNAPSHOT</springdata.commons>
+		<springdata.commons>1.9.2.RELEASE</springdata.commons>
 		<springdata.jpa>1.7.1.RELEASE</springdata.jpa>
 		<springdata.mongodb>1.6.1.RELEASE</springdata.mongodb>
 		<springdata.neo4j>3.2.1.RELEASE</springdata.neo4j>
@@ -47,6 +47,12 @@
             <url>file://${project.build.directory}/mvn-repo</url>
         </repository>
     </distributionManagement>
+
+    <scm>
+        <url>https://github.com/zEvg/spring-data-rest</url>
+        <connection>scm:git:git@github.com:zEvg/spring-data-rest.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:zEvg/spring-data-rest.git</developerConnection>
+    </scm>
 
 	<developers>
 		<developer>
