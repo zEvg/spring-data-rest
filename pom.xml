@@ -5,7 +5,7 @@
 
 	<groupId>org.springframework.data</groupId>
 	<artifactId>spring-data-rest-parent</artifactId>
-	<version>2.2.2.zevg</version>
+	<version>2.2.3.zevg-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Spring Data REST</name>
@@ -52,7 +52,7 @@
         <url>https://github.com/zEvg/spring-data-rest</url>
         <connection>scm:git:git@github.com:zEvg/spring-data-rest.git</connection>
         <developerConnection>scm:git:git@github.com:zEvg/spring-data-rest.git</developerConnection>
-      <tag>spring-data-rest-parent-2.2.2.zevg</tag>
+      <tag>HEAD</tag>
   </scm>
 
 	<developers>
